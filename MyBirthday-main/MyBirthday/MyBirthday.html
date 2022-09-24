@@ -1,0 +1,94 @@
+
+<html lang="vi"
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            window.open = function () {};
+            window.print = function () {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        ></script>
+        <meta content="clickberry-extension-here" />
+    </head>
+
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <div class="pyro">
+            <div class="before">
+                
+            </div>
+            <div class="after">
+
+            </div>
+            <div class="container">
+                <!-- 2. Dòng chữ Happy Birthday
+                Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+                <div class="balloon">
+                    <div><span>H</span></div>
+                    <div><span>A</span></div>
+                    <div><span>P</span></div>
+                    <div><span>P</span></div>
+                    <div><span>Y</span></div>
+                    <div><span>B</span></div>
+                    <div><span>I</span></div>
+                    <div><span>R</span></div>
+                    <div><span>T</span></div>
+                    <div><span>H</span></div>
+                    <div><span>D</span></div>
+                    <div><span>A</span></div>
+                    <div><span>Y</span></div>
+                </div>
+                <div class="avatar">
+                    <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                    <img src="./mai anh2 (2).jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                    <!-- 4. Tên của người đó -->
+                    <h1 onclick="showMessage()" class="avatar__title">Nguyễn Lê Mai Anh</h1>
+                </div>
+                
+                <!-- 5. Phần nhạc -->
+                <!-- <audio id="player" autoplay loop>
+                    <source src="./music.mp3" type="audio/mp3">
+                </audio> -->
+            </div>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                swal({
+                    title: "Lời nhắn", // Tiêu đề của popup
+                    text: "Chúc ebe của anh Mai Anh 1 ngày sinh nhật vuii vẻ và quên hết chuyện cũ đi nhaa và càng ngày càng xinh đẹp hơn nữa và càng ở bên htem lâu hơn nữa nhaa hihi:33 hmm huhu anh là 1 người hong giỏi ăn nói cho lắm nên anh cũng hong biết chúc như nào cho nó thật là pơ phẹc nói chuung là anh chỉ muốn chúc bé iuu tất cả. Thật ra thì anh rất chi là thích thích siu thích bé nuôn>< cho dù người cũ đã tệ với em như thế nào thì anh sẽ bù đắp lại tất cả và chỉ muốn là cùng bé đi qua quãng đường còn lai anh hong dám đứa hẹn trăm năm nhưng đến khi nào em ko bỏ anh và anh còn cơ hội là anh sẽ mãi bên em, tui thì thích tui vì nó rất chi là trẻ con và và và rất thương bé đó hihi. và hôm nay 28/09 anh chúc em một ngày thật vui vẻ:3 chuyện cũ coi như qua hết luon đi nhaa và anh yêu em nhiều lắm nên là làm vợ anh nhaa hihi:33. iuuuu béeeeee Awwwwwwwww.", // Nội dung lời nhắn
+                    button: {
+                        text: "❤️️",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
